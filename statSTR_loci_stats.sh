@@ -4,7 +4,7 @@ CHROM=$1
 START=$2
 
 statSTR \
-    --vcf output/ensembletr_output/ensembletr.vcf.gz \
+    --vcf output/ensembletr_output/ensembletr_sorted.vcf.gz \
     --vcftype hipstr \
     --afreq --use-length \
     --region chr${CHROM}:${START}-${START} \

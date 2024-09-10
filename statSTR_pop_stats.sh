@@ -9,7 +9,7 @@ declare -a populations=( "$@" )
 for population in "${populations[@]}"; do
 
     statSTR \
-        --vcf output/ensembletr_output/ensembletr.vcf.gz \
+        --vcf output/ensembletr_output/ensembletr_sorted.vcf.gz \
         --vcftype hipstr \
         --thresh --afreq --use-length \
         --out downstream/"${population}"_stats \
