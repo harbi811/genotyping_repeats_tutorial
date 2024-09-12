@@ -19,5 +19,5 @@ for v in reader:
     reflen = trrecord.ref_allele_length
     for a in afreqs:
         if afreqs[a] < 0.001: continue 
-        if a == reflen : continue
+        if a == reflen: continue
         sys.stdout.write("\t".join([v.CHROM, str(v.POS), str(v.INFO["PERIOD"]), "%.2f"%(a-reflen), "%.3f"%afreqs[a]])+"\n")

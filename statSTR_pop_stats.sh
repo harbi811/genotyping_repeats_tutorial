@@ -18,6 +18,6 @@ for population in "${populations[@]}"; do
 done
 
 # Get list of STR, period, diff, AF
-# python get_diff_af.py output/ensembletr_output/ensembletr.vcf.gz > downstream/diff_afreqs.tab
+# python get_diff_af.py output/ensembletr_output/ensembletr_sorted.vcf.gz > downstream/diff_afreqs.tab
 
 
